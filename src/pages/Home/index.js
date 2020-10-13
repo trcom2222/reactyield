@@ -89,6 +89,9 @@ const Wrapper = styled.div`
     padding-right: 10px;
     text-align: left;
   }
+  .two-boxes {
+    padding-left: 35px;
+  }
   .small-box-container {
     display: flex;
     justify-content: space-between;
@@ -378,10 +381,10 @@ const MainPage = (props) => {
             <div className="title1">Your Retirement Stake</div>
           </div>
           <div className='small-box-container'>
-            <div className="small-box">
+            <div className="small-box two-boxes">
               Retirement Yield Available in 24hrs<br/>Time Passed 1hr
             </div>
-            <div className="small-box" style={{color:'#4147f6'}}>
+            <div className="small-box two-boxes" style={{color:'#4147f6'}}>
               Stake Your Yeld Tokens:34<br/>Your Current Staked Yeld Tokens: 194
             </div>
             <div className="small-box wallet-btn" onClick={()=>{setStakeWallet(!isStakeWallet)}}>
